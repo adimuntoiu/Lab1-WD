@@ -1,0 +1,49 @@
+body{
+    padding:20px;
+    background: #f5f3f0;
+}
+.center{
+    text-align:center;
+}
+@font-face{
+    font-family:Coco Gothic;
+    src: url("fonts/CocoGothic.ttf");
+}
+@font-face{
+    font-family: Coco Gothic Light;
+    src: url("fonts/CocoGothic-Light.ttf");
+}
+p{
+    font-family:"Coco Gothic Light";
+}
+h1, h2{
+    font-family:"Coco Gothic";
+}
+span{
+    font-family: "ABeeZee";
+}
+.inline-row{
+    display: inline-grid;
+}
+legend{
+    padding-top: 40px;
+}
+fieldset{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 0;
+}
+.submit{
+    border:none;
+    background-color:snow;
+}
+.options{
+    border:none;
+    background-color:snow;
+}
+
+.navigation{
+    background-color: antiquewhite;
+    display: grid;
+}

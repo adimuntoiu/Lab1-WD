@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact </title>
+    </head>
+    <body>
+        <header>
+            <h1> Lab <span>2</span> - Web Design</h1>
+        </header>
+    
+        <nav aria-label="Main navigation">
+            <ul>
+                <li> <a href="https://stefaniga.github.io/ewd-uvt-2026/"> Class Documentation</a> </li>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="#"> Contact </a></li>
+            </ul>
+        </nav>
+    
+        <a class="" href="https://adimuntoiu.github.io/Lab1-WD/"> Skip to the main page</a>
+        
+        <main id="main-content">
+            <h1> Contact form</h1>
+            <section>
+                <form method="post" action="#" aria-label="Contact Form">
+                    <fieldset>
+                        <legend> Enter your details </legend>
+                        <div class="inline-row">
+                            <label for="user-email"> Your Email (required) </label>
+                            <input type="email" id="user-email" name="email" required>
+
+                            <label for="name"> Your name (required) </label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="phone-number"> Your phone number (optional) </label>
+                            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9\s\-+]+" title="You can only use digits, spaces, hyphens or plus only">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend> Enter your message</legend>
+                        <div class="inline-row">
+                            <label for="subject"> Subject (required) </label>
+                            <input type="text" id="subject" name="subject" aria-describedby="subject-hint" required>
+                            <p id="subject-hint" class="subject-hint"> The message needs a title</p>
+                            
+                            <label for="user-message"> Message (required) </label>
+                            <textarea id="user-message" name="message" rows="7" required> </textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <Legend> Choose what position you have in the university </Legend>
+                        <select class="options"> 
+                            <option> Student </option>
+                            <option> Seminary teacher </option>
+                            <option> Course teacher </option>
+                            <option> Vice-Dean</option>
+                            <option> Dean</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <Legend>  Is the message important? </Legend>
+                        <div class="inline-row">
+                            <div>
+                                <label for="important-yes"> Yes </label>
+                                <input type="radio" id="important-yes">
+                            </div>
+                            
+                            <div>
+                                <label for="important-no"> No </label>
+                                <input type="radio" id="important-no">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <Legend>  How did you hear about us? </Legend>
+                        <div class="inline-row">
+                            <div>
+                                <label for="course"> Through the course </label>
+                                <input type="radio" id="course">
+                            </div>
+
+                            <div>
+                                <label for="social-media"> Through social media </label>
+                                <input type="radio" id="social-media">
+                            </div>
+                            
+                            <div>
+                                <label for="friend"> Through a friend </label>
+                                <input type="radio" id="friend">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="submit"> Send your message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="center"> <p> Muntoiu Adrian - Web Design - Semester <span> 2 </span> </p> </div>
+        </footer>
+    </body>
+</html>
