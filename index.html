@@ -1,40 +1,216 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="styles.css">
-        <title> Web Design - Class </title>
-    </head>
-    <body>
-        <header>
-            <h1> Lab <span> 1 </span> - Web Design </h1>
-        </header>
-        
-        <nav aria-label="Main navigation">
-            <ul> 
-                <li> <a href="https://stefaniga.github.io/ewd-uvt-2026/"> Class Documentation</a> </li>
-                <li> <a href="#"> Home </a> </li>
-                <li> <a href="contact.html"> Contact </a> </li>
-            </ul>
-        </nav>
-        
-        <main id="main-content">
-            <section class="about-me">
-                <h2> About me / Course Goals</h2>
-                <p> My name is Adrian Muntoiu, I am a year <span> 1 </span> Computer Science (in English) student at the West University of Timisoara. In this course, I would like to learn more about how to create adaptive websites for all devices.</p>
-            </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title> Web Design - Class </title>
+</head>
+<body>
+<header>
+    <h1> Lab <span> 1 </span> - Web Design </h1>
+</header>
 
-            <section class="photo">
-                <h2> Photo</h2>
-                <div class="center"> <p> The following photo will send you to my GitHub</p> </div>
-                <div class="center"> <a href="https://github.com/adimuntoiu"> <img src="https://avatars.githubusercontent.com/u/163822797?v=4" alt="Link to my github"> </a> </div>
-            </section>
-        </main>
-        
-    <footer>
-        <div class="center"> <p> Muntoiu Adrian - Web Design - Semester <span> 2 </span> </p> </div>    
-    </footer>
-    
-    </body>
+<nav aria-label="Main navigation">
+    <ul>
+        <li> <a href="https://stefaniga.github.io/ewd-uvt-2026/"> Class Documentation</a> </li>
+        <li> <a href="#"> Home </a> </li>
+        <li> <a href="contact.html"> Contact </a> </li>
+    </ul>
+</nav>
+
+<main id="main-content">
+    <section class="about-me">
+        <h2> About me / Course Goals</h2>
+        <p> My name is Adrian Muntoiu, I am a year <span> 1 </span> Computer Science (in English) student at the West University of Timisoara. In this course, I would like to learn more about how to create adaptive websites for all devices.</p>
+    </section>
+
+    <section class="photo">
+        <h2> Photo</h2>
+        <div class="center"> <p> The following photo will send you to my GitHub</p> </div>
+        <div class="center"> <a href="https://github.com/adimuntoiu"> <img src="https://avatars.githubusercontent.com/u/163822797?v=4" alt="Link to my github"> </a> </div>
+    </section>
+</main>
+
+<div class="center-table">
+    <table class="border-2">
+        <thead>
+        <tr>
+            <th scope="col" colspan="3">Personal Skills</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th scope="row" rowspan="3">Programming</th>
+            <td>Python</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td> C/C++ </td>
+            <td>Kotlin</td>
+        </tr>
+
+        <tr>
+            <td>Java</td>
+            <td> TypeScirpt</td>
+        </tr>
+
+        <tr>
+            <th scope="row" rowspan="4">Design</th>
+            <td colspan="2">Figma</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Illustrator</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Photoshop</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">UI/UX</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Other</th>
+            <td colspan="2">Git</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<br> <br>
+
+<div class="center-table">
+    <table class="border">
+        <caption>A brief overview of my personal websites and Android projects.</caption>
+        <thead>
+        <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Year</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Languages</th>
+            <th scope="col">Link</th>
+            <th scope="col">Difficulty</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="rowgroup" rowspan="4">Web Development</th>
+            <td>A History of Romania</td>
+            <td>First website created for a history project. Brief overview of the history of Romania.</td>
+            <td>2022</td>
+            <td>
+                <ul>
+                    <li>HTML</li>
+                    <li>000webhosting</li>
+                </ul>
+            </td>
+            <td>HTML, CSS</td>
+            <td>Host offline (000webhosting)</td>
+            <td>
+                <select>
+                    <option value="low" selected>Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>About Traian Vuia</td>
+            <td>Second history project focusing on the Romanian inventor Traian Vuia.</td>
+            <td>2022</td>
+            <td>
+                <ul>
+                    <li>HTML</li>
+                    <li>000webhosting</li>
+                </ul>
+            </td>
+            <td>HTML, CSS, JavaScript</td>
+            <td>Host offline (000webhosting)</td>
+            <td>
+                <select>
+                    <option value="low" selected>Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Don't Waste Your Chance</td>
+            <td>Competition project regarding high school dropout rates in Romania.</td>
+            <td>2024</td>
+            <td>
+                <ul>
+                    <li>Svelte</li>
+                    <li>Vercel</li>
+                </ul>
+            </td>
+            <td>Svelte, CSS, JS</td>
+            <td><a href="https://dont-waste-your-chance.vercel.app/">Live Link</a></td>
+            <td>
+                <select>
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Harambe Cartel Website</td>
+            <td>Official website for the "Harambe Cartel" FTC robotics team.</td>
+            <td>2026</td>
+            <td>
+                <ul>
+                    <li>Svelte</li>
+                    <li>Vercel</li>
+                    <li>Figma / Oodoo</li>
+                </ul>
+            </td>
+            <td>Svelte, TS, CSS</td>
+            <td><a href="https://harambe.ro">harambe.ro</a></td>
+            <td>
+                <select>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high" selected>High</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">Android Development</th>
+            <td><strong>Reviver</strong></td>
+            <td>Atestat project & 3rd Place at National Olympiad. Android app built to limit screen time via personalized overlays.</td>
+            <td>2025</td>
+            <td>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Android Studio</li>
+                    <li>Figma</li>
+                </ul>
+            </td>
+            <td>Kotlin, Java</td>
+            <td><a href="https://github.com/adimuntoiu/Reviver">GitHub Repo</a></td>
+            <td>
+                <select>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high" selected>High</option>
+                </select>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <div class="center"> <p> Muntoiu Adrian - Web Design - Semester <span> 2 </span> </p> </div>
+</footer>
+
+</body>
 </html>
