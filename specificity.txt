@@ -1,0 +1,9 @@
+1.  Paragraph A recieves the atributes from the default paragraph atribute from the style tag, so it has gray color, a font size of 1 root element, font family of Georgia, etc. So its selector is p.
+    Paragraph B has the info class, so its selector is .info.
+    Paragraph C has the #warning id and the paragraph atribute, but the id is used over the paragraph style tag, so #warning is its selector.
+    Paragraph D has an id, a class and the paragraph tag, but we have inside the style tag, #warning.info which utilises both an id and a class, so this is its selector.
+
+2. In css, id+class > id > class > default style tag. So, the color of the id+class atribute is used in the 4th paragraph. Same with the font family. 
+
+3. The font keeps its font-family from the styles.css file, however, the color from the html file is used. This is because the last defined atributes are used, and because we have the link between the styles file and the html file at the top, and then the style tag, the color atributes of the style tag is used.
+ 

@@ -1,0 +1,80 @@
+.card{
+    background: linear-gradient(56deg , #81B5D9, #5EA0CF, #3A89C2, #447478, #4EBA8B);
+    background-size: 400% 400%;
+    color:white;
+    border-radius:20px;
+    display:flex;
+    width:100%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@font-face{
+    font-family:Coco Gothic;
+    src: url("fonts/CocoGothic.ttf");
+}
+
+@font-face{
+    font-family: Coco Gothic Light;
+    src: url("fonts/CocoGothic-Light.ttf");
+}
+
+p{
+    padding-left: 20px;
+    font-family: "Coco Gothic";
+    text-align: justify;
+}
+
+span{
+    font-family: "ABeeZee";
+}
+.left{
+    flex: 1;
+    padding-top: 20px;
+}
+.right{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image{
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.name{
+    padding-left: 20px;
+    font-size: 30px;
+}
+#university{
+    padding-left: 20px;
+    padding-top:0px;
+    font-size: 22px;
+    color: #e9ffff;
+}
+.mail{
+    text-decoration: none;
+    color:white;
+}
+.mail:hover{
+    color: #2d6341;
+}
+#github.github{
+    text-decoration: none;
+    color:white;
+}
+#github.github:hover{
+    color:purple;
+}
