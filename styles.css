@@ -108,3 +108,100 @@ table tbody tr:nth-child(even) td{
     color: #7f3434;
     font-weight: bold;
 }
+
+.cv-grid {
+    display: grid;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas: 
+        "profile profile"
+        "sidebar projects"
+        "contact contact";
+}
+
+.profile-section{
+    grid-area: profile;
+}
+
+.sidebar-section{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column; gap: 20px;
+}
+
+.projects-section{
+    grid-area: projects;
+}
+
+.contact-section{
+    grid-area: contact;
+}
+
+.cv-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.cv-card h2 {
+    border-bottom: 2px solid #f5f3f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    background: #e6f2ec;
+    color: #40755a;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.project-item {
+    border-left: 4px solid #40755a;
+    padding: 10px 15px;
+    background: #fafafa;
+    border-radius: 0 10px 10px 0;
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    color: #40755a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .cv-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "profile" "projects" "sidebar" "contact";
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
